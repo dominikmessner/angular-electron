@@ -3,9 +3,7 @@
     {{ 'PAGES.HOME.TITLE' | translate }}
   </h1>
 
-  <button dt-button>Test</button>
-
-  <dt-card>
+  <dt-card class="main-card">
     <dt-card-title>Hello world</dt-card-title>
     <dt-table class="table" [dataSource]="dataSource" dtSort #sortable>
       <dt-simple-text-column name="host" label="Host"></dt-simple-text-column>
@@ -57,5 +55,5 @@
     />
   </dt-card>
 
-  <a routerLink="/detail">{{ 'PAGES.HOME.GO_TO_DETAIL' | translate }}</a>
+  <a dt-button routerLink="/detail">{{ 'PAGES.HOME.GO_TO_DETAIL' | translate }}</a>
 </div>
