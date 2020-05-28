@@ -11,13 +11,14 @@
 
 # Introduction
 
-Bootstrap and package your project with Angular 9 and Electron 8 (Typescript + SASS + Hot Reload) for creating Desktop applications.
+Bootstrap and package your project with Angular 9, Electron 8 (Typescript + SASS + Hot Reload) and Barista 7 for creating Desktop applications.
 
 Currently runs with:
 
 - Angular v9.1.4
 - Electron v8.2.5
 - Electron Builder v22.6.0
+- Barista 7.0
 
 With this sample, you can :
 
@@ -28,6 +29,13 @@ With this sample, you can :
 /!\ Hot reload only pertains to the renderer process. The main electron process is not able to be hot reloaded, only restarted.
 
 /!\ Angular 9.x CLI needs Node 10.13 or later to works correctly.
+
+## Steps to add Barista:
+Install Barista components using ng-add:
+<pre><code>ng add @dynatrace/barista-components</pre></code>
+
+Add styles and assets:
+https://github.com/dynatrace-oss/barista/blob/master/documentation/getting-started.md#step-4-include-the-styles
 
 ## Getting Started
 

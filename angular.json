@@ -17,10 +17,26 @@
             "tsConfig": "src/tsconfig.app.json",
             "polyfills": "src/polyfills.ts",
             "assets": [
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "metadata.json",
+                "input": "node_modules/@dynatrace/barista-icons",
+                "output": "/assets/icons"
+              },
+              {
+                "glob": "*.svg",
+                "input": "node_modules/@dynatrace/barista-icons",
+                "output": "/assets/icons"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/@dynatrace/barista-fonts/fonts",
+                "output": "/fonts"
+              }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/@dynatrace/barista-components/style/main.scss"
             ],
             "scripts": [],
             "customWebpackConfig": {
@@ -113,10 +129,26 @@
             "karmaConfig": "src/karma.conf.js",
             "scripts": [],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/@dynatrace/barista-components/style/main.scss"
             ],
             "assets": [
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "metadata.json",
+                "input": "node_modules/@dynatrace/barista-icons",
+                "output": "/assets/icons"
+              },
+              {
+                "glob": "*.svg",
+                "input": "node_modules/@dynatrace/barista-icons",
+                "output": "/assets/icons"
+              },
+              {
+                "glob": "**/*",
+                "input": "node_modules/@dynatrace/barista-fonts/fonts",
+                "output": "/fonts"
+              }
             ],
             "customWebpackConfig": {
               "path": "./angular.webpack.js",
